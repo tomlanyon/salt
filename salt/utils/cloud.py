@@ -1137,7 +1137,7 @@ def deploy_script(host,
 
                 if kwargs['username'] != 'root':
                     root_cmd(
-                        'chown -R root \\"{0}\\"'.format(
+                        'chown -R root "{0}"'.format(
                             preseed_minion_keys_tempdir
                         ),
                         tty, sudo, **kwargs
